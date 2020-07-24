@@ -4,6 +4,7 @@ ul {
 
 li.list-group-item {
     border: none;
+	font-weight: bold;
 }
 
 li.list-group-item:hover {
