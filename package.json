@@ -49,5 +49,9 @@
     "tslint": "~6.1.0",
     "typescript": "~3.8.3",
     "@ionic/angular-toolkit": "latest"
-  }
+  },
+  "engines": {
+  "node": "~10.16.3",
+  "npm": "~6.9.0"
+}
 }
