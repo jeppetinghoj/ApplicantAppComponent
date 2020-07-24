@@ -1,0 +1,35 @@
+<li class="list-group-item">
+    <div class="col-md-auto vcenter" style="vertical-align: top;">
+        <i class="fa fa-star" style="font-size:24px;"></i>
+    </div>
+    <div class="col-md-auto vcenter">
+        <img
+            style="padding-left: 10px;" width="90px" src="{{data.image}}" alt="Applicant"
+            class="img-circle" />
+    </div>
+    <div class="col-md-3 vcenter">
+        <span class="name">{{data.firstName}} {{data.lastName}}</span><br />
+        <span>{{formattedDate}}</span>
+    </div>
+    <div class="col-md-3 vcenter">
+        <ng-container *ngFor="let n of filledStars">
+            <i class="fa fa-star" style="font-size:24px;"></i>
+        </ng-container>
+        <ng-container *ngFor="let n of emptyStars">
+            <i class="fa fa-star-o" style="font-size:24px; color:#54646b;"></i>
+        </ng-container>
+    </div>
+    <div class="col-md-2 vcenter">
+        Age: {{data.age}}
+    </div>
+    <div class="col-md-2 vcenter">
+        <div class="col-md-6">
+            <i class="fa fa-paperclip rotated" style="font-size:16px;" aria-hidden="true"></i> {{data.noOfAttachments}}
+        </div>
+        <div class="col-md-6">
+            <i class="fa fa-snowflake-o" style="font-size:16px;" aria-hidden="true"></i> {{data.noOfOther}}
+        </div>
+    </div>
+    <div class="clearfix"></div>
+    <br />
+</li>

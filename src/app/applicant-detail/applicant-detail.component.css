@@ -1,0 +1,31 @@
+ul {
+    list-style: none;
+}
+
+li.list-group-item {
+    border: none;
+}
+
+li.list-group-item:hover {
+    background-color: AliceBlue;
+    cursor: pointer;
+}
+
+.rotated {
+    transform: rotate(90deg);
+}
+.name {
+    font-size: 1.2em;
+    font-weight: 700;
+    color: #54646b;
+}
+
+.fa-star {
+    color: #fccc67;
+}
+
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
